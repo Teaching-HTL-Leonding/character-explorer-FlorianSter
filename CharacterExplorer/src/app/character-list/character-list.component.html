@@ -1,0 +1,8 @@
+<div *ngIf="this.data">
+  <ul>
+    <li *ngFor="let x of this.data.records">
+      <a [routerLink]="['/characterDetails',x.fields.id]">{{ x.fields.name }}</a>
+      <img  src="{{ x.fields.image }}"/>
+    </li>
+  </ul>
+</div>
